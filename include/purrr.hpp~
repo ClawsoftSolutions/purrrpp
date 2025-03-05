@@ -4,6 +4,7 @@
 namespace purrr {
   class RendererBackendInstance {
   public: // Functions
+    virtual void Initialize();
   };
 
   struct RendererConfiguration {
@@ -17,8 +18,7 @@ namespace purrr {
     
   public: // Functions
     Renderer(RendererConfiguration configuration);
-    ~Renderer();
   };
 }
 
-#endif
+#endif // PURRR_HPP__
